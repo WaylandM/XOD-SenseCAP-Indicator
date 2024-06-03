@@ -1,0 +1,197 @@
+{
+  "links": [
+    {
+      "id": "SJmiEAkKEC",
+      "input": {
+        "nodeId": "rkiNC1tER",
+        "pinKey": "rksdSYxyA"
+      },
+      "output": {
+        "nodeId": "BkgoV0kKVA",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "B1MHAkFV0",
+      "input": {
+        "nodeId": "rkiNC1tER",
+        "pinKey": "Hk3HHYgyC"
+      },
+      "output": {
+        "nodeId": "r1lHRyYNR",
+        "pinKey": "r1xLoH1K4R"
+      }
+    },
+    {
+      "id": "ry-8L75V0",
+      "input": {
+        "nodeId": "Hy9E87q4C",
+        "pinKey": "BkeKcj6ZZ"
+      },
+      "output": {
+        "nodeId": "rkiNC1tER",
+        "pinKey": "Byv0rFg1C"
+      }
+    },
+    {
+      "id": "SJ88IQc4C",
+      "input": {
+        "nodeId": "rJ9H8m9NA",
+        "pinKey": "BkeKcj6ZZ"
+      },
+      "output": {
+        "nodeId": "rkiNC1tER",
+        "pinKey": "SyxwCHYe10"
+      }
+    },
+    {
+      "id": "r1zoUQq4R",
+      "input": {
+        "nodeId": "r1-XU75ER",
+        "pinKey": "ryGwYhIZm"
+      },
+      "output": {
+        "nodeId": "Hy9E87q4C",
+        "pinKey": "rksccsp-W"
+      }
+    },
+    {
+      "id": "HJRsIQ5EA",
+      "input": {
+        "nodeId": "HJqjLQ9VR",
+        "pinKey": "ryGwYhIZm"
+      },
+      "output": {
+        "nodeId": "rJ9H8m9NA",
+        "pinKey": "rksccsp-W"
+      }
+    },
+    {
+      "id": "rkghLXc4R",
+      "input": {
+        "nodeId": "r1-XU75ER",
+        "pinKey": "H1VpIKnLb7"
+      },
+      "output": {
+        "nodeId": "rkiNC1tER",
+        "pinKey": "rJ-v0SKl1R"
+      }
+    },
+    {
+      "id": "H1fn8mcE0",
+      "input": {
+        "nodeId": "HJqjLQ9VR",
+        "pinKey": "H1VpIKnLb7"
+      },
+      "output": {
+        "nodeId": "r1-XU75ER",
+        "pinKey": "rkl6IK3L-7"
+      }
+    },
+    {
+      "id": "HJPFkzoER",
+      "input": {
+        "nodeId": "r1-XU75ER",
+        "pinKey": "HkT8KhLWm"
+      },
+      "output": {
+        "nodeId": "ryZYyMoEA",
+        "pinKey": "Sk450OL-X"
+      }
+    },
+    {
+      "id": "r1Ft1MsVR",
+      "input": {
+        "nodeId": "HJqjLQ9VR",
+        "pinKey": "HkT8KhLWm"
+      },
+      "output": {
+        "nodeId": "ryZYyMoEA",
+        "pinKey": "Sk450OL-X"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rkiNC1tER",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "wayland/ahtx0/hygrometer-thermometer"
+    },
+    {
+      "boundLiterals": {
+        "B13SCNhl-": "5"
+      },
+      "id": "BkgoV0kKVA",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "id": "r1lHRyYNR",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/i2c-interface"
+    },
+    {
+      "id": "r1-XU75ER",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 3
+      },
+      "type": "xod/uart/print"
+    },
+    {
+      "boundLiterals": {
+        "Hkqu9oaWb": "\"Relative humidity (%): \""
+      },
+      "id": "Hy9E87q4C",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/core/concat"
+    },
+    {
+      "boundLiterals": {
+        "Hkqu9oaWb": "\"Temperature (Celsius): \""
+      },
+      "id": "rJ9H8m9NA",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/core/concat"
+    },
+    {
+      "id": "HJqjLQ9VR",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "type": "xod/uart/print"
+    },
+    {
+      "id": "ryZYyMoEA",
+      "position": {
+        "units": "slots",
+        "x": -3,
+        "y": 0
+      },
+      "type": "xod/uart/uart-0"
+    }
+  ]
+}
