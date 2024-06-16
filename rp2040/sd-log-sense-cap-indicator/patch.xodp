@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "description": "Fires when write is done",
+      "id": "S1AooA3BR",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Perform file open, write, flush, close cycle",
+      "id": "rJZRjiCnH0",
+      "label": "W",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Line to append",
+      "id": "HkzAsoChrC",
+      "label": "LINE",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-string"
+    },
+    {
+      "id": "ByXCsoC2SA",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "File name to append to",
+      "id": "rJ4CjoRhSR",
+      "label": "FILE",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-string"
+    }
+  ]
+}

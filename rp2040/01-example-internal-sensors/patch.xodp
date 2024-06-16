@@ -1,0 +1,724 @@
+{
+  "comments": [
+    {
+      "content": "*To use the RP2040 in the SenseCAP Indicator you must:*\n\n1. Add the following line to ``` xod/__packages__/extra.txt ```:\nhttps://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json\n\n2. Add the following line to ```xod/__packages__/packages/rp2040/hardware/rp2040/3.9.0/variants/seeed_indicator_rp2040/pins_arduino.h```:\n#define SERIAL_PORT_HARDWARE Serial\n",
+      "id": "H1Y8R83rR",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 5
+      },
+      "size": {
+        "height": 2,
+        "units": "slots",
+        "width": 22
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "rJnl5g0LnBR",
+      "input": {
+        "nodeId": "r1W5g0UhBC",
+        "pinKey": "ryGwYhIZm"
+      },
+      "output": {
+        "nodeId": "HJf9lA83SA",
+        "pinKey": "rksccsp-W"
+      }
+    },
+    {
+      "id": "HyTg9lC83SC",
+      "input": {
+        "nodeId": "SJN9x08nrR",
+        "pinKey": "ryGwYhIZm"
+      },
+      "output": {
+        "nodeId": "ByQqxALhSR",
+        "pinKey": "rksccsp-W"
+      }
+    },
+    {
+      "id": "rJRg5x082HR",
+      "input": {
+        "nodeId": "SJN9x08nrR",
+        "pinKey": "H1VpIKnLb7"
+      },
+      "output": {
+        "nodeId": "r1W5g0UhBC",
+        "pinKey": "rkl6IK3L-7"
+      }
+    },
+    {
+      "id": "Sy1bcl0I3HR",
+      "input": {
+        "nodeId": "rJIcx0L2BR",
+        "pinKey": "BJkFuSiN0"
+      },
+      "output": {
+        "nodeId": "Sku5lAU2S0",
+        "pinKey": "BkfrdBsN0"
+      }
+    },
+    {
+      "id": "ByfZceRU3rA",
+      "input": {
+        "nodeId": "HJf9lA83SA",
+        "pinKey": "BkeKcj6ZZ"
+      },
+      "output": {
+        "nodeId": "Bk6qlAU3r0",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S1Q-5gR82r0",
+      "input": {
+        "nodeId": "ByQqxALhSR",
+        "pinKey": "BkeKcj6ZZ"
+      },
+      "output": {
+        "nodeId": "S1RqeA83rA",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "H1N-5x082H0",
+      "input": {
+        "nodeId": "HJJxql08hr0",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "BJB5eALnBC",
+        "pinKey": "Sk450OL-X"
+      }
+    },
+    {
+      "id": "HJrW9g0IhrA",
+      "input": {
+        "nodeId": "BkWe9gAI3SC",
+        "pinKey": "BkeKcj6ZZ"
+      },
+      "output": {
+        "nodeId": "HkXxcx0L3rA",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "r1UbcgCUnBR",
+      "input": {
+        "nodeId": "BJxlclRI2SR",
+        "pinKey": "ryGwYhIZm"
+      },
+      "output": {
+        "nodeId": "BkWe9gAI3SC",
+        "pinKey": "rksccsp-W"
+      }
+    },
+    {
+      "id": "SyPZceRInrC",
+      "input": {
+        "nodeId": "BJxlclRI2SR",
+        "pinKey": "HkT8KhLWm"
+      },
+      "output": {
+        "nodeId": "SJ8gcxCIhH0",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SyOWcxRU2HA",
+      "input": {
+        "nodeId": "SJN9x08nrR",
+        "pinKey": "HkT8KhLWm"
+      },
+      "output": {
+        "nodeId": "HkHxqgRL2BA",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Hktbcg0L2r0",
+      "input": {
+        "nodeId": "r1W5g0UhBC",
+        "pinKey": "HkT8KhLWm"
+      },
+      "output": {
+        "nodeId": "r1Vx9gCL2H0",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "r1cZqeAI3rC",
+      "input": {
+        "nodeId": "BJxlclRI2SR",
+        "pinKey": "H1VpIKnLb7"
+      },
+      "output": {
+        "nodeId": "SJN9x08nrR",
+        "pinKey": "rkl6IK3L-7"
+      }
+    },
+    {
+      "id": "BkpbqlRInSR",
+      "input": {
+        "nodeId": "SkDxqgAU2HA",
+        "pinKey": "BJlHojaWZ"
+      },
+      "output": {
+        "nodeId": "S1D5eAL2BA",
+        "pinKey": "HJWYJGUiVR"
+      }
+    },
+    {
+      "id": "SkAWclCL3HR",
+      "input": {
+        "nodeId": "SkflcxCLnBA",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SkDxqgAU2HA",
+        "pinKey": "r1H_oipZb"
+      }
+    },
+    {
+      "id": "SkyMce0UnBC",
+      "input": {
+        "nodeId": "HyFqg082HC",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "Sku5lAU2S0",
+        "pinKey": "BkfrdBsN0"
+      }
+    },
+    {
+      "id": "S1xMqlCL3r0",
+      "input": {
+        "nodeId": "S1D5eAL2BA",
+        "pinKey": "HkKJGUo40"
+      },
+      "output": {
+        "nodeId": "SycqlRLnB0",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ry-f9xA8nrR",
+      "input": {
+        "nodeId": "S1D5eAL2BA",
+        "pinKey": "H1Qt1GUiNA"
+      },
+      "output": {
+        "nodeId": "rkFeqeALnBR",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "H1Mf9g083HC",
+      "input": {
+        "nodeId": "S1D5eAL2BA",
+        "pinKey": "H14FyMUsNA"
+      },
+      "output": {
+        "nodeId": "Bkul9g0LnS0",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryJGGwnHR",
+      "input": {
+        "nodeId": "Bk25eCLhr0",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SJiezwnSA",
+        "pinKey": "Hyz9dS3BC"
+      }
+    },
+    {
+      "id": "B1Zzzv3r0",
+      "input": {
+        "nodeId": "BJs9lAUnH0",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SJiezwnSA",
+        "pinKey": "HJCM5_H3HC"
+      }
+    },
+    {
+      "id": "ryMNzw3SR",
+      "input": {
+        "nodeId": "SJiezwnSA",
+        "pinKey": "By8rtS3S0"
+      },
+      "output": {
+        "nodeId": "S1lqgC8hrC",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "Bk5VfP3H0",
+      "input": {
+        "nodeId": "S1D5eAL2BA",
+        "pinKey": "ByrFJfIoV0"
+      },
+      "output": {
+        "nodeId": "SJiezwnSA",
+        "pinKey": "Byo6_H2SC"
+      }
+    },
+    {
+      "id": "SJg0Gv2H0",
+      "input": {
+        "nodeId": "HkVjfwhS0",
+        "pinKey": "ryGwYhIZm"
+      },
+      "output": {
+        "nodeId": "SJsiGw2rR",
+        "pinKey": "rksccsp-W"
+      }
+    },
+    {
+      "id": "BkIRMv3SR",
+      "input": {
+        "nodeId": "HkVjfwhS0",
+        "pinKey": "HkT8KhLWm"
+      },
+      "output": {
+        "nodeId": "B1mAGPhHR",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryWymD2BA",
+      "input": {
+        "nodeId": "SJsiGw2rR",
+        "pinKey": "BkeKcj6ZZ"
+      },
+      "output": {
+        "nodeId": "Byp0GDhrR",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Bka1mwhr0",
+      "input": {
+        "nodeId": "r1W5g0UhBC",
+        "pinKey": "H1VpIKnLb7"
+      },
+      "output": {
+        "nodeId": "HkVjfwhS0",
+        "pinKey": "rkl6IK3L-7"
+      }
+    },
+    {
+      "id": "HyyxmP2SA",
+      "input": {
+        "nodeId": "HkVjfwhS0",
+        "pinKey": "H1VpIKnLb7"
+      },
+      "output": {
+        "nodeId": "S1D5eAL2BA",
+        "pinKey": "r1MKJfUsVA"
+      }
+    },
+    {
+      "id": "rk8p9wnHR",
+      "input": {
+        "nodeId": "rJIcx0L2BR",
+        "pinKey": "B1Op_rj4R"
+      },
+      "output": {
+        "nodeId": "SJmT5v3BR",
+        "pinKey": "B1lRPPhH0"
+      }
+    },
+    {
+      "id": "SyDp5PhSC",
+      "input": {
+        "nodeId": "SJiezwnSA",
+        "pinKey": "B1vGFBnS0"
+      },
+      "output": {
+        "nodeId": "SJmT5v3BR",
+        "pinKey": "B1lRPPhH0"
+      }
+    },
+    {
+      "id": "HJWWi16BR",
+      "input": {
+        "nodeId": "Sk8loJaSC",
+        "pinKey": "BJlHojaWZ"
+      },
+      "output": {
+        "nodeId": "SJiezwnSA",
+        "pinKey": "rkNK_r2SR"
+      }
+    },
+    {
+      "id": "SJXZoypHR",
+      "input": {
+        "nodeId": "SkTMzw2SC",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "Sk8loJaSC",
+        "pinKey": "r1H_oipZb"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "B13SCNhl-": "1"
+      },
+      "id": "S1lqgC8hrC",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "id": "r1W5g0UhBC",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 4
+      },
+      "type": "xod/uart/print"
+    },
+    {
+      "boundLiterals": {
+        "Hkqu9oaWb": "\"Relative humidity (%): \""
+      },
+      "id": "HJf9lA83SA",
+      "position": {
+        "units": "slots",
+        "x": 15,
+        "y": 3
+      },
+      "type": "xod/core/concat"
+    },
+    {
+      "boundLiterals": {
+        "Hkqu9oaWb": "\"Temperature (Celsius): \""
+      },
+      "id": "ByQqxALhSR",
+      "position": {
+        "units": "slots",
+        "x": 18,
+        "y": 3
+      },
+      "type": "xod/core/concat"
+    },
+    {
+      "id": "SJN9x08nrR",
+      "position": {
+        "units": "slots",
+        "x": 17,
+        "y": 4
+      },
+      "type": "xod/uart/print"
+    },
+    {
+      "id": "BJB5eALnBC",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 0
+      },
+      "type": "xod/uart/uart-0"
+    },
+    {
+      "boundLiterals": {
+        "B1Op_rj4R": "On Boot"
+      },
+      "id": "rJIcx0L2BR",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "wayland/sgp40-air-quality-sensor/init"
+    },
+    {
+      "id": "S1D5eAL2BA",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 2
+      },
+      "type": "wayland/sgp40-air-quality-sensor/measure-voc-index"
+    },
+    {
+      "id": "Sku5lAU2S0",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "wayland/sgp40-air-quality-sensor/sgp40-device"
+    },
+    {
+      "id": "HyFqg082HC",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "SycqlRLnB0",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "BJs9lAUnH0",
+      "label": "RH",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "Bk25eCLhr0",
+      "label": "Temp",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "Bk6qlAU3r0",
+      "label": "RH",
+      "position": {
+        "units": "slots",
+        "x": 16,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "S1RqeA83rA",
+      "label": "Temp",
+      "position": {
+        "units": "slots",
+        "x": 19,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "HJJxql08hr0",
+      "label": "Serial",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "BJxlclRI2SR",
+      "position": {
+        "units": "slots",
+        "x": 20,
+        "y": 4
+      },
+      "type": "xod/uart/print"
+    },
+    {
+      "boundLiterals": {
+        "Hkqu9oaWb": "\"VOC Index: \""
+      },
+      "id": "BkWe9gAI3SC",
+      "position": {
+        "units": "slots",
+        "x": 21,
+        "y": 3
+      },
+      "type": "xod/core/concat"
+    },
+    {
+      "id": "SkflcxCLnBA",
+      "label": "VOC",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "HkXxcx0L3rA",
+      "label": "VOC",
+      "position": {
+        "units": "slots",
+        "x": 22,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "r1Vx9gCL2H0",
+      "label": "Serial",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "HkHxqgRL2BA",
+      "label": "Serial",
+      "position": {
+        "units": "slots",
+        "x": 17,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "SJ8gcxCIhH0",
+      "label": "Serial",
+      "position": {
+        "units": "slots",
+        "x": 20,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "HJTIija-W": "0"
+      },
+      "id": "SkDxqgAU2HA",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 3
+      },
+      "type": "xod/core/format-number"
+    },
+    {
+      "id": "Bkul9g0LnS0",
+      "label": "RH",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "rkFeqeALnBR",
+      "label": "Temp",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "SJiezwnSA",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "wayland/scd4x-co2-rh-temp/simple-scd4x-sensor"
+    },
+    {
+      "id": "SkTMzw2SC",
+      "label": "CO2",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "HkVjfwhS0",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 4
+      },
+      "type": "xod/uart/print"
+    },
+    {
+      "boundLiterals": {
+        "Hkqu9oaWb": "\"CO2 (PPM): \""
+      },
+      "id": "SJsiGw2rR",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 3
+      },
+      "type": "xod/core/concat"
+    },
+    {
+      "id": "B1mAGPhHR",
+      "label": "Serial",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "Byp0GDhrR",
+      "label": "CO2",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "BJx6wvnr0": "True"
+      },
+      "id": "SJmT5v3BR",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "@/power-internal-sensors"
+    },
+    {
+      "boundLiterals": {
+        "HJTIija-W": "0"
+      },
+      "id": "Sk8loJaSC",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/core/format-number"
+    }
+  ]
+}

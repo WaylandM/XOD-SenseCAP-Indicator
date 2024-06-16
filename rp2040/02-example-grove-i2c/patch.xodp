@@ -1,0 +1,235 @@
+{
+  "comments": [
+    {
+      "content": "*To use the RP2040 in the SenseCAP Indicator you must:*\n\n1. Add the following line to ``` xod/__packages__/extra.txt ```:\nhttps://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json\n\n2. Add the following line to ```xod/__packages__/packages/rp2040/hardware/rp2040/3.9.0/variants/seeed_indicator_rp2040/pins_arduino.h```:\n#define SERIAL_PORT_HARDWARE Serial\n",
+      "id": "ByrQlw2BA",
+      "position": {
+        "units": "slots",
+        "x": -5,
+        "y": 4
+      },
+      "size": {
+        "height": 2,
+        "units": "slots",
+        "width": 22
+      }
+    }
+  ],
+  "description": "Patch to demonstrate using an I2C device attached to the grove connector. Use a serial monitor (such as the one available in the Arduino IDE) to view output.",
+  "links": [
+    {
+      "id": "SJmiEAkKEC",
+      "input": {
+        "nodeId": "rkiNC1tER",
+        "pinKey": "rksdSYxyA"
+      },
+      "output": {
+        "nodeId": "BkgoV0kKVA",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "r1zoUQq4R",
+      "input": {
+        "nodeId": "r1-XU75ER",
+        "pinKey": "ryGwYhIZm"
+      },
+      "output": {
+        "nodeId": "Hy9E87q4C",
+        "pinKey": "rksccsp-W"
+      }
+    },
+    {
+      "id": "HJRsIQ5EA",
+      "input": {
+        "nodeId": "HJqjLQ9VR",
+        "pinKey": "ryGwYhIZm"
+      },
+      "output": {
+        "nodeId": "rJ9H8m9NA",
+        "pinKey": "rksccsp-W"
+      }
+    },
+    {
+      "id": "H1fn8mcE0",
+      "input": {
+        "nodeId": "HJqjLQ9VR",
+        "pinKey": "H1VpIKnLb7"
+      },
+      "output": {
+        "nodeId": "r1-XU75ER",
+        "pinKey": "rkl6IK3L-7"
+      }
+    },
+    {
+      "id": "SJHJxujEC",
+      "input": {
+        "nodeId": "BJ0A1OjNA",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "ryZYyMoEA",
+        "pinKey": "Sk450OL-X"
+      }
+    },
+    {
+      "id": "BJ6OlOs4C",
+      "input": {
+        "nodeId": "HJqjLQ9VR",
+        "pinKey": "HkT8KhLWm"
+      },
+      "output": {
+        "nodeId": "HyNOeusNA",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BJgKlujNR",
+      "input": {
+        "nodeId": "r1-XU75ER",
+        "pinKey": "HkT8KhLWm"
+      },
+      "output": {
+        "nodeId": "r1FwgOiV0",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Skr9gDhrA",
+      "input": {
+        "nodeId": "Hy9E87q4C",
+        "pinKey": "BkeKcj6ZZ"
+      },
+      "output": {
+        "nodeId": "rkiNC1tER",
+        "pinKey": "Byv0rFg1C"
+      }
+    },
+    {
+      "id": "rkwcxv3rR",
+      "input": {
+        "nodeId": "rJ9H8m9NA",
+        "pinKey": "BkeKcj6ZZ"
+      },
+      "output": {
+        "nodeId": "rkiNC1tER",
+        "pinKey": "SyxwCHYe10"
+      }
+    },
+    {
+      "id": "B1u-WPnH0",
+      "input": {
+        "nodeId": "r1-XU75ER",
+        "pinKey": "H1VpIKnLb7"
+      },
+      "output": {
+        "nodeId": "rkiNC1tER",
+        "pinKey": "rJ-v0SKl1R"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rkiNC1tER",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "wayland/ahtx0/hygrometer-thermometer"
+    },
+    {
+      "boundLiterals": {
+        "B13SCNhl-": "1"
+      },
+      "id": "BkgoV0kKVA",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "id": "r1-XU75ER",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": 3
+      },
+      "type": "xod/uart/print"
+    },
+    {
+      "boundLiterals": {
+        "Hkqu9oaWb": "\"Relative humidity (%): \""
+      },
+      "id": "Hy9E87q4C",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 2
+      },
+      "type": "xod/core/concat"
+    },
+    {
+      "boundLiterals": {
+        "Hkqu9oaWb": "\"Temperature (Celsius): \""
+      },
+      "id": "rJ9H8m9NA",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/core/concat"
+    },
+    {
+      "id": "HJqjLQ9VR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "type": "xod/uart/print"
+    },
+    {
+      "id": "ryZYyMoEA",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": 0
+      },
+      "type": "xod/uart/uart-0"
+    },
+    {
+      "id": "BJ0A1OjNA",
+      "label": "Serial",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "r1FwgOiV0",
+      "label": "Serial",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "HyNOeusNA",
+      "label": "Serial",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    }
+  ]
+}
