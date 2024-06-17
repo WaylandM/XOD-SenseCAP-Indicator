@@ -1,4 +1,5 @@
 {
+  "description": "Appends lines of text to a file on SD card. Possible errors: — Can't open a file — Initialization failed or no SD card — Can't write data to SD card",
   "nodes": [
     {
       "description": "Fires when write is done",
@@ -17,7 +18,7 @@
       "label": "W",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 2,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
@@ -28,7 +29,7 @@
       "label": "LINE",
       "position": {
         "units": "slots",
-        "x": 2,
+        "x": 1,
         "y": 0
       },
       "type": "xod/patch-nodes/input-string"
@@ -48,7 +49,7 @@
       "label": "FILE",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 0,
         "y": 0
       },
       "type": "xod/patch-nodes/input-string"

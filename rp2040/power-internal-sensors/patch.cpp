@@ -20,6 +20,7 @@ node {
             digitalWrite(powerPin, LOW);
         }
 
+        delay(500);
         emitValue<output_Done>(ctx, 1);
     }
 }

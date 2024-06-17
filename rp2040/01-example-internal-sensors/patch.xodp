@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "*To use the RP2040 in the SenseCAP Indicator you must:*\n\n1. Add the following line to ``` xod/__packages__/extra.txt ```:\nhttps://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json\n\n2. Add the following line to ```xod/__packages__/packages/rp2040/hardware/rp2040/3.9.0/variants/seeed_indicator_rp2040/pins_arduino.h```:\n#define SERIAL_PORT_HARDWARE Serial\n",
+      "content": "*To use the RP2040 in the SenseCAP Indicator you must:*\n\n1. Add the following line to ``` xod/__packages__/extra.txt ```:\nhttps://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json\n\n2. After installing the developement tools for the rp2040, add the following line to ```xod/__packages__/packages/rp2040/hardware/rp2040/3.9.0/variants/seeed_indicator_rp2040/pins_arduino.h```:\n#define SERIAL_PORT_HARDWARE Serial\n",
       "id": "H1Y8R83rR",
       "position": {
         "units": "slots",
@@ -13,8 +13,51 @@
         "units": "slots",
         "width": 22
       }
+    },
+    {
+      "content": "# Initialize sensors\n___",
+      "id": "SyApOjpSR",
+      "position": {
+        "units": "slots",
+        "x": -10,
+        "y": -2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 7
+      }
+    },
+    {
+      "content": "# Read measurement data from sensors\n___",
+      "id": "SkJZYipSC",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": -2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 10
+      }
+    },
+    {
+      "content": "# Send data over UART\n___",
+      "id": "S15e1ZKjar0",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": -2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 12
+      }
     }
   ],
+  "description": "Patch to demonstrate the use of the environmental sensors inside the Sense CAP Indicator. Data can be viewed in a serial monitor.",
   "links": [
     {
       "id": "rJnl5g0LnBR",
@@ -226,50 +269,6 @@
       }
     },
     {
-      "id": "ryJGGwnHR",
-      "input": {
-        "nodeId": "Bk25eCLhr0",
-        "pinKey": "__in__"
-      },
-      "output": {
-        "nodeId": "SJiezwnSA",
-        "pinKey": "Hyz9dS3BC"
-      }
-    },
-    {
-      "id": "B1Zzzv3r0",
-      "input": {
-        "nodeId": "BJs9lAUnH0",
-        "pinKey": "__in__"
-      },
-      "output": {
-        "nodeId": "SJiezwnSA",
-        "pinKey": "HJCM5_H3HC"
-      }
-    },
-    {
-      "id": "ryMNzw3SR",
-      "input": {
-        "nodeId": "SJiezwnSA",
-        "pinKey": "By8rtS3S0"
-      },
-      "output": {
-        "nodeId": "S1lqgC8hrC",
-        "pinKey": "HJU8CE2lW"
-      }
-    },
-    {
-      "id": "Bk5VfP3H0",
-      "input": {
-        "nodeId": "S1D5eAL2BA",
-        "pinKey": "ByrFJfIoV0"
-      },
-      "output": {
-        "nodeId": "SJiezwnSA",
-        "pinKey": "Byo6_H2SC"
-      }
-    },
-    {
       "id": "SJg0Gv2H0",
       "input": {
         "nodeId": "HkVjfwhS0",
@@ -325,47 +324,212 @@
       }
     },
     {
-      "id": "rk8p9wnHR",
+      "id": "BJK8jUsprA",
+      "input": {
+        "nodeId": "rkgLo8oaH0",
+        "pinKey": "r1EUTT6NR"
+      },
+      "output": {
+        "nodeId": "S1LsUjTS0",
+        "pinKey": "B1lRPPhH0"
+      }
+    },
+    {
+      "id": "ByqUj8opSR",
+      "input": {
+        "nodeId": "rkgLo8oaH0",
+        "pinKey": "B1bDa6a4C"
+      },
+      "output": {
+        "nodeId": "HkGUjUiTBR",
+        "pinKey": "Hkce6paVA"
+      }
+    },
+    {
+      "id": "S1oUsLipSA",
+      "input": {
+        "nodeId": "B1mLsIipBR",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkGUjUiTBR",
+        "pinKey": "Hkce6paVA"
+      }
+    },
+    {
+      "id": "BJa8iIiTSR",
+      "input": {
+        "nodeId": "rJbUsLjaBC",
+        "pinKey": "rJZCnDVhSR"
+      },
+      "output": {
+        "nodeId": "rkgLo8oaH0",
+        "pinKey": "SJ8up66EA"
+      }
+    },
+    {
+      "id": "S11x8oLiprC",
+      "input": {
+        "nodeId": "S1u8i8saSA",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HJP8jUopHA",
+        "pinKey": "HkyxURuSPyW"
+      }
+    },
+    {
+      "id": "SkENPsTSA",
       "input": {
         "nodeId": "rJIcx0L2BR",
         "pinKey": "B1Op_rj4R"
       },
       "output": {
-        "nodeId": "SJmT5v3BR",
-        "pinKey": "B1lRPPhH0"
+        "nodeId": "rJbUsLjaBC",
+        "pinKey": "SJgChwE2BA"
       }
     },
     {
-      "id": "SyDp5PhSC",
+      "id": "r1UVDiTBR",
       "input": {
-        "nodeId": "SJiezwnSA",
-        "pinKey": "B1vGFBnS0"
+        "nodeId": "HJP8jUopHA",
+        "pinKey": "Bkh8A_Sv1-"
       },
       "output": {
-        "nodeId": "SJmT5v3BR",
-        "pinKey": "B1lRPPhH0"
+        "nodeId": "rJIcx0L2BR",
+        "pinKey": "r16xKBsNC"
       }
     },
     {
-      "id": "HJWWi16BR",
+      "id": "SJKcPjpB0",
       "input": {
-        "nodeId": "Sk8loJaSC",
-        "pinKey": "BJlHojaWZ"
-      },
-      "output": {
-        "nodeId": "SJiezwnSA",
-        "pinKey": "rkNK_r2SR"
-      }
-    },
-    {
-      "id": "SJXZoypHR",
-      "input": {
-        "nodeId": "SkTMzw2SC",
+        "nodeId": "HyU9PjTrA",
         "pinKey": "__in__"
       },
       "output": {
-        "nodeId": "Sk8loJaSC",
+        "nodeId": "HkGUjUiTBR",
+        "pinKey": "Hkce6paVA"
+      }
+    },
+    {
+      "id": "HkocPjTSR",
+      "input": {
+        "nodeId": "rJbUsLjaBC",
+        "pinKey": "r1fChvV2BC"
+      },
+      "output": {
+        "nodeId": "HyU9PjTrA",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HJ86DjpSC",
+      "input": {
+        "nodeId": "S1lqgC8hrC",
+        "pinKey": "r1jzp_DTZ"
+      },
+      "output": {
+        "nodeId": "rJ32wjTSC",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rkPoAPiTBR",
+      "input": {
+        "nodeId": "ByWsCwj6S0",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SkfjAPjpBA",
         "pinKey": "r1H_oipZb"
+      }
+    },
+    {
+      "id": "HJdsCPj6rR",
+      "input": {
+        "nodeId": "SJQsRPj6SR",
+        "pinKey": "r1ftZKNhBA"
+      },
+      "output": {
+        "nodeId": "r1BjCDsaSR",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HyYjCPjarC",
+      "input": {
+        "nodeId": "SyNoAPipSR",
+        "pinKey": "HJzt9oNhr0"
+      },
+      "output": {
+        "nodeId": "BJLjCvj6SC",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "By5iAviTrR",
+      "input": {
+        "nodeId": "SyNoAPipSR",
+        "pinKey": "SybK9iN2rR"
+      },
+      "output": {
+        "nodeId": "SJQsRPj6SR",
+        "pinKey": "BygYZF4nSC"
+      }
+    },
+    {
+      "id": "H1jsCPoaHA",
+      "input": {
+        "nodeId": "SkfjAPjpBA",
+        "pinKey": "BJlHojaWZ"
+      },
+      "output": {
+        "nodeId": "SyNoAPipSR",
+        "pinKey": "ByWO-B3BR"
+      }
+    },
+    {
+      "id": "Hy2o0ws6rR",
+      "input": {
+        "nodeId": "ByxjCPsTrR",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SyNoAPipSR",
+        "pinKey": "By4_ZBnH0"
+      }
+    },
+    {
+      "id": "r1Tj0DjTHR",
+      "input": {
+        "nodeId": "Skj0Pi6HR",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SyNoAPipSR",
+        "pinKey": "Hk3V_bShrA"
+      }
+    },
+    {
+      "id": "S1V7OjTSA",
+      "input": {
+        "nodeId": "SJQsRPj6SR",
+        "pinKey": "B1-KbYEnSA"
+      },
+      "output": {
+        "nodeId": "S1lqgC8hrC",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "BJHhOsTSR",
+      "input": {
+        "nodeId": "S1D5eAL2BA",
+        "pinKey": "ByrFJfIoV0"
+      },
+      "output": {
+        "nodeId": "SyNoAPipSR",
+        "pinKey": "ryeY5iE2BA"
       }
     }
   ],
@@ -377,7 +541,7 @@
       "id": "S1lqgC8hrC",
       "position": {
         "units": "slots",
-        "x": 6,
+        "x": 0,
         "y": 0
       },
       "type": "xod/core/clock"
@@ -386,8 +550,8 @@
       "id": "r1W5g0UhBC",
       "position": {
         "units": "slots",
-        "x": 14,
-        "y": 4
+        "x": 12,
+        "y": 3
       },
       "type": "xod/uart/print"
     },
@@ -398,8 +562,8 @@
       "id": "HJf9lA83SA",
       "position": {
         "units": "slots",
-        "x": 15,
-        "y": 3
+        "x": 13,
+        "y": 2
       },
       "type": "xod/core/concat"
     },
@@ -410,8 +574,8 @@
       "id": "ByQqxALhSR",
       "position": {
         "units": "slots",
-        "x": 18,
-        "y": 3
+        "x": 16,
+        "y": 2
       },
       "type": "xod/core/concat"
     },
@@ -419,8 +583,8 @@
       "id": "SJN9x08nrR",
       "position": {
         "units": "slots",
-        "x": 17,
-        "y": 4
+        "x": 15,
+        "y": 3
       },
       "type": "xod/uart/print"
     },
@@ -428,8 +592,8 @@
       "id": "BJB5eALnBC",
       "position": {
         "units": "slots",
-        "x": 13,
-        "y": 0
+        "x": 9,
+        "y": -1
       },
       "type": "xod/uart/uart-0"
     },
@@ -440,8 +604,8 @@
       "id": "rJIcx0L2BR",
       "position": {
         "units": "slots",
-        "x": 0,
-        "y": 1
+        "x": -8,
+        "y": 2
       },
       "type": "wayland/sgp40-air-quality-sensor/init"
     },
@@ -449,7 +613,7 @@
       "id": "S1D5eAL2BA",
       "position": {
         "units": "slots",
-        "x": 9,
+        "x": 4,
         "y": 2
       },
       "type": "wayland/sgp40-air-quality-sensor/measure-voc-index"
@@ -458,58 +622,38 @@
       "id": "Sku5lAU2S0",
       "position": {
         "units": "slots",
-        "x": 0,
-        "y": 0
+        "x": -10,
+        "y": 1
       },
       "type": "wayland/sgp40-air-quality-sensor/sgp40-device"
     },
     {
       "id": "HyFqg082HC",
-      "label": "DEV",
+      "label": "SGP40",
       "position": {
         "units": "slots",
-        "x": -1,
-        "y": 1
+        "x": -10,
+        "y": 2
       },
       "type": "xod/patch-nodes/to-bus"
     },
     {
       "id": "SycqlRLnB0",
-      "label": "DEV",
+      "label": "SGP40",
       "position": {
         "units": "slots",
-        "x": 9,
+        "x": 4,
         "y": 1
       },
       "type": "xod/patch-nodes/from-bus"
-    },
-    {
-      "id": "BJs9lAUnH0",
-      "label": "RH",
-      "position": {
-        "units": "slots",
-        "x": 6,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/to-bus"
-    },
-    {
-      "id": "Bk25eCLhr0",
-      "label": "Temp",
-      "position": {
-        "units": "slots",
-        "x": 5,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/to-bus"
     },
     {
       "id": "Bk6qlAU3r0",
       "label": "RH",
       "position": {
         "units": "slots",
-        "x": 16,
-        "y": 2
+        "x": 14,
+        "y": 1
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -518,8 +662,8 @@
       "label": "Temp",
       "position": {
         "units": "slots",
-        "x": 19,
-        "y": 2
+        "x": 17,
+        "y": 1
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -528,8 +672,8 @@
       "label": "Serial",
       "position": {
         "units": "slots",
-        "x": 13,
-        "y": 1
+        "x": 9,
+        "y": 0
       },
       "type": "xod/patch-nodes/to-bus"
     },
@@ -537,8 +681,8 @@
       "id": "BJxlclRI2SR",
       "position": {
         "units": "slots",
-        "x": 20,
-        "y": 4
+        "x": 18,
+        "y": 3
       },
       "type": "xod/uart/print"
     },
@@ -549,8 +693,8 @@
       "id": "BkWe9gAI3SC",
       "position": {
         "units": "slots",
-        "x": 21,
-        "y": 3
+        "x": 19,
+        "y": 2
       },
       "type": "xod/core/concat"
     },
@@ -559,7 +703,7 @@
       "label": "VOC",
       "position": {
         "units": "slots",
-        "x": 9,
+        "x": 4,
         "y": 4
       },
       "type": "xod/patch-nodes/to-bus"
@@ -569,8 +713,8 @@
       "label": "VOC",
       "position": {
         "units": "slots",
-        "x": 22,
-        "y": 2
+        "x": 20,
+        "y": 1
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -579,8 +723,8 @@
       "label": "Serial",
       "position": {
         "units": "slots",
-        "x": 14,
-        "y": 3
+        "x": 12,
+        "y": 2
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -589,8 +733,8 @@
       "label": "Serial",
       "position": {
         "units": "slots",
-        "x": 17,
-        "y": 3
+        "x": 15,
+        "y": 2
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -599,8 +743,8 @@
       "label": "Serial",
       "position": {
         "units": "slots",
-        "x": 20,
-        "y": 3
+        "x": 18,
+        "y": 2
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -611,7 +755,7 @@
       "id": "SkDxqgAU2HA",
       "position": {
         "units": "slots",
-        "x": 9,
+        "x": 4,
         "y": 3
       },
       "type": "xod/core/format-number"
@@ -621,7 +765,7 @@
       "label": "RH",
       "position": {
         "units": "slots",
-        "x": 11,
+        "x": 6,
         "y": 1
       },
       "type": "xod/patch-nodes/from-bus"
@@ -631,36 +775,17 @@
       "label": "Temp",
       "position": {
         "units": "slots",
-        "x": 10,
+        "x": 5,
         "y": 1
       },
       "type": "xod/patch-nodes/from-bus"
     },
     {
-      "id": "SJiezwnSA",
-      "position": {
-        "units": "slots",
-        "x": 4,
-        "y": 1
-      },
-      "type": "wayland/scd4x-co2-rh-temp/simple-scd4x-sensor"
-    },
-    {
-      "id": "SkTMzw2SC",
-      "label": "CO2",
-      "position": {
-        "units": "slots",
-        "x": 3,
-        "y": 3
-      },
-      "type": "xod/patch-nodes/to-bus"
-    },
-    {
       "id": "HkVjfwhS0",
       "position": {
         "units": "slots",
-        "x": 11,
-        "y": 4
+        "x": 9,
+        "y": 3
       },
       "type": "xod/uart/print"
     },
@@ -671,8 +796,8 @@
       "id": "SJsiGw2rR",
       "position": {
         "units": "slots",
-        "x": 12,
-        "y": 3
+        "x": 10,
+        "y": 2
       },
       "type": "xod/core/concat"
     },
@@ -681,8 +806,8 @@
       "label": "Serial",
       "position": {
         "units": "slots",
-        "x": 11,
-        "y": 3
+        "x": 9,
+        "y": 2
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -691,8 +816,8 @@
       "label": "CO2",
       "position": {
         "units": "slots",
-        "x": 13,
-        "y": 2
+        "x": 11,
+        "y": 1
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -700,25 +825,168 @@
       "boundLiterals": {
         "BJx6wvnr0": "True"
       },
-      "id": "SJmT5v3BR",
+      "id": "S1LsUjTS0",
       "position": {
         "units": "slots",
-        "x": 2,
-        "y": 0
+        "x": -5,
+        "y": -1
       },
       "type": "@/power-internal-sensors"
+    },
+    {
+      "id": "rkgLo8oaH0",
+      "position": {
+        "units": "slots",
+        "x": -7,
+        "y": 0
+      },
+      "type": "wayland/scd4x-co2-rh-temp/init"
+    },
+    {
+      "id": "rJbUsLjaBC",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": 1
+      },
+      "type": "wayland/scd4x-co2-rh-temp/start-measurement"
+    },
+    {
+      "id": "HkGUjUiTBR",
+      "position": {
+        "units": "slots",
+        "x": -7,
+        "y": -1
+      },
+      "type": "wayland/scd4x-co2-rh-temp/scd4x-device"
+    },
+    {
+      "id": "B1mLsIipBR",
+      "label": "SCD4x",
+      "position": {
+        "units": "slots",
+        "x": -9,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "HJP8jUopHA",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": 3
+      },
+      "type": "xod/core/flip-flop"
+    },
+    {
+      "id": "S1u8i8saSA",
+      "label": "init",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "HyU9PjTrA",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/jumper"
+    },
+    {
+      "id": "rJ32wjTSC",
+      "label": "init",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "Skj0Pi6HR",
+      "label": "RH",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "ByxjCPsTrR",
+      "label": "Temp",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "ByWsCwj6S0",
+      "label": "CO2",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/to-bus"
     },
     {
       "boundLiterals": {
         "HJTIija-W": "0"
       },
-      "id": "Sk8loJaSC",
+      "id": "SkfjAPjpBA",
       "position": {
         "units": "slots",
-        "x": 3,
-        "y": 2
+        "x": -2,
+        "y": 3
       },
       "type": "xod/core/format-number"
+    },
+    {
+      "id": "SJQsRPj6SR",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 1
+      },
+      "type": "wayland/scd4x-co2-rh-temp/is-data-ready"
+    },
+    {
+      "id": "SyNoAPipSR",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 2
+      },
+      "type": "wayland/scd4x-co2-rh-temp/read-measurement"
+    },
+    {
+      "id": "r1BjCDsaSR",
+      "label": "SCD4x",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "BJLjCvj6SC",
+      "label": "SCD4x",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/from-bus"
     }
   ]
 }

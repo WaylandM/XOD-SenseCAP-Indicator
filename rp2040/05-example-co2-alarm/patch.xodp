@@ -1,4 +1,49 @@
 {
+  "comments": [
+    {
+      "content": "# Activate audible alarm if CO2 concentration reaches user-defined threshold.\n",
+      "id": "ryltIhaB0",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": -6
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 6
+      }
+    },
+    {
+      "content": "# Read CO2 concentration from sensor.\n",
+      "id": "Hk5YLhaSR",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": -6
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 6
+      }
+    },
+    {
+      "content": "# Send CO2 concentration to UART.",
+      "id": "SJhfv2Tr0",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": -6
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    }
+  ],
+  "description": "Patch to sound an alarm when CO2 concentration in the air reaches a user-defined threshold.",
   "links": [
     {
       "id": "rkXLpIUhHA",
@@ -186,8 +231,8 @@
       "id": "Hkx86UI2SA",
       "position": {
         "units": "slots",
-        "x": 15,
-        "y": -2
+        "x": 9,
+        "y": -1
       },
       "type": "xod/core/delay"
     },
@@ -207,8 +252,8 @@
       "id": "HJGLpULnrR",
       "position": {
         "units": "slots",
-        "x": 12,
-        "y": -2
+        "x": 6,
+        "y": -1
       },
       "type": "@/buzzer-play-tone"
     },
@@ -216,14 +261,14 @@
       "id": "SJHC58hS0",
       "position": {
         "units": "slots",
-        "x": 2,
+        "x": 0,
         "y": -4
       },
       "type": "wayland/scd4x-co2-rh-temp/simple-scd4x-sensor"
     },
     {
       "boundLiterals": {
-        "HJbACN3gb": "1000"
+        "HJbACN3gb": "1500"
       },
       "id": "rkZ1jL2HR",
       "position": {
@@ -237,7 +282,7 @@
       "id": "BJpJjU2SR",
       "position": {
         "units": "slots",
-        "x": 4,
+        "x": 2,
         "y": -5
       },
       "type": "xod/core/clock"
@@ -256,7 +301,7 @@
       "label": "CO2",
       "position": {
         "units": "slots",
-        "x": 2,
+        "x": 0,
         "y": -3
       },
       "type": "xod/patch-nodes/to-bus"
@@ -275,7 +320,7 @@
       "id": "r1vYjP2HA",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": -1,
         "y": -5
       },
       "type": "@/power-internal-sensors"
@@ -284,7 +329,7 @@
       "id": "S1aQx1TrR",
       "position": {
         "units": "slots",
-        "x": 19,
+        "x": 13,
         "y": -5
       },
       "type": "xod/uart/uart-0"
@@ -293,7 +338,7 @@
       "id": "H1ZSaeJprC",
       "position": {
         "units": "slots",
-        "x": 19,
+        "x": 13,
         "y": -2
       },
       "type": "xod/uart/print"
@@ -305,7 +350,7 @@
       "id": "S1MSplJTBC",
       "position": {
         "units": "slots",
-        "x": 20,
+        "x": 14,
         "y": -3
       },
       "type": "xod/core/concat"
@@ -315,7 +360,7 @@
       "label": "CO2",
       "position": {
         "units": "slots",
-        "x": 21,
+        "x": 15,
         "y": -4
       },
       "type": "xod/patch-nodes/from-bus"
@@ -325,7 +370,7 @@
       "label": "new-data",
       "position": {
         "units": "slots",
-        "x": 5,
+        "x": 3,
         "y": -3
       },
       "type": "xod/patch-nodes/to-bus"
@@ -335,7 +380,7 @@
       "label": "new-data",
       "position": {
         "units": "slots",
-        "x": 22,
+        "x": 16,
         "y": -3
       },
       "type": "xod/patch-nodes/from-bus"

@@ -2,5 +2,5 @@
   "description": "Nodes for the RP2040 in the Seeed Studio SenseCAP Indicator.",
   "license": "MIT",
   "name": "rp2040",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }

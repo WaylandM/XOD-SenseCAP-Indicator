@@ -178,7 +178,7 @@
       "id": "rJ9H8m9NA",
       "position": {
         "units": "slots",
-        "x": 2,
+        "x": 3,
         "y": 2
       },
       "type": "xod/core/concat"
@@ -187,7 +187,7 @@
       "id": "HJqjLQ9VR",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 2,
         "y": 3
       },
       "type": "xod/uart/print"
@@ -226,7 +226,7 @@
       "label": "Serial",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 2,
         "y": 2
       },
       "type": "xod/patch-nodes/from-bus"
