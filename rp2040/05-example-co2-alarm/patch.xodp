@@ -41,6 +41,20 @@
         "units": "slots",
         "width": 4
       }
+    },
+    {
+      "content": "# For instructions on using this library please see: https://www.hackster.io/wayland2/xod-on-the-sensecap-indicator-part-1-b4daea\n",
+      "id": "SJuLHX0B0",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 19
+      }
     }
   ],
   "description": "Patch to sound an alarm when CO2 concentration in the air reaches a user-defined threshold.",

@@ -1,17 +1,17 @@
 {
   "comments": [
     {
-      "content": "*To use the RP2040 in the SenseCAP Indicator you must:*\n\n1. Add the following line to ``` xod/__packages__/extra.txt ```:\nhttps://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json\n\n2. Add the following line to ```xod/__packages__/packages/rp2040/hardware/rp2040/3.9.0/variants/seeed_indicator_rp2040/pins_arduino.h```:\n#define SERIAL_PORT_HARDWARE Serial\n",
-      "id": "ByrQlw2BA",
+      "content": "# For instructions on using this library please see: \n# https://www.hackster.io/wayland2/xod-on-the-sensecap-indicator-part-1-b4daea\n",
+      "id": "B1QXSXABA",
       "position": {
         "units": "slots",
-        "x": -5,
+        "x": -2,
         "y": 4
       },
       "size": {
-        "height": 2,
+        "height": 1,
         "units": "slots",
-        "width": 22
+        "width": 19
       }
     }
   ],
