@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "esp32",
+      "name": "sensecap_indicator",
       "maintainer": "Espressif Systems",
       "websiteURL": "https://waylandm.github.io/XOD-SenseCAP-Indicator/board_definitions",
       "email": "hristo@espressif.com",
