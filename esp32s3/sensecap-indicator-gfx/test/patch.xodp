@@ -1,0 +1,55 @@
+{
+  "links": [
+    {
+      "id": "SybLYpC8A",
+      "input": {
+        "nodeId": "SkjBKpCIC",
+        "pinKey": "SJX2DaCIA"
+      },
+      "output": {
+        "nodeId": "Syy8Y6C8C",
+        "pinKey": "BJ-yPaR8R"
+      }
+    },
+    {
+      "id": "HkjLFp08C",
+      "input": {
+        "nodeId": "SkjBKpCIC",
+        "pinKey": "HkJTvp0IC"
+      },
+      "output": {
+        "nodeId": "ByuUFpRIR",
+        "pinKey": "Bkf4BDsmV"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "SkjBKpCIC",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "@/init"
+    },
+    {
+      "id": "Syy8Y6C8C",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "@/display"
+    },
+    {
+      "id": "ByuUFpRIR",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-pulse"
+    }
+  ]
+}

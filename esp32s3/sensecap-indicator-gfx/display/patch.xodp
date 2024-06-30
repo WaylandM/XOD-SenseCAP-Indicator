@@ -1,0 +1,25 @@
+{
+  "description": "Create a SenseCAP Indicator display.",
+  "nodes": [
+    {
+      "id": "rylPvhC80",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "A SenseCAP Indicator display.",
+      "id": "BJ-yPaR8R",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-self"
+    }
+  ]
+}

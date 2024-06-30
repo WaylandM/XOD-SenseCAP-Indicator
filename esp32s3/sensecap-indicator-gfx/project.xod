@@ -1,0 +1,6 @@
+{
+  "description": "Graphics library for the Sense CAP Indicator screen. Wraps https://github.com/WaylandM/Seeed_Arduino_GFX",
+  "license": "BSD",
+  "name": "sensecap-indicator-gfx",
+  "version": "0.0.1"
+}
