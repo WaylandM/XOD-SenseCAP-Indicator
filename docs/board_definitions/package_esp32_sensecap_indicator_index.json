@@ -3,7 +3,7 @@
     {
       "name": "esp32",
       "maintainer": "Espressif Systems",
-      "websiteURL": "https://github.com/espressif/arduino-esp32",
+      "websiteURL": "https://waylandm.github.io/XOD-SenseCAP-Indicator/board_definitions",
       "email": "hristo@espressif.com",
       "help": {
         "online": "http://esp32.com"
