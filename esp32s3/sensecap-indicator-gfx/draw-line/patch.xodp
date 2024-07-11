@@ -1,0 +1,105 @@
+{
+  "description": "Draw a line.",
+  "nodes": [
+    {
+      "id": "rJZPvTqDA",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Pulse on completion.\n",
+      "id": "H1gbDwa9wC",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Update.",
+      "id": "B1GWvPpqP0",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "#FFFFFF"
+      },
+      "description": "Line color.",
+      "id": "S1Xbwvp5P0",
+      "label": "Color",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/color/input-color"
+    },
+    {
+      "description": "X coordinate of the start of the line.",
+      "id": "Bk4WPPTcwC",
+      "label": "X0",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Y coordinate of the start of the line.",
+      "id": "S1r-Dvp9DR",
+      "label": "Y0",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "X coordinate of the end of the line.",
+      "id": "HJ8-PwTqvA",
+      "label": "X1",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Y coordinate of the end of the line.",
+      "id": "H1vZvwacvC",
+      "label": "Y1",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "A SenseCAP Indicator display.",
+      "id": "r1CwDT9DR",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-display"
+    }
+  ]
+}

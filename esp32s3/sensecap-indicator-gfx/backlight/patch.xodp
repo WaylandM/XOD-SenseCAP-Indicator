@@ -1,0 +1,119 @@
+{
+  "description": "Switch backlight on/off.",
+  "links": [
+    {
+      "id": "r1IdeJRcPA",
+      "input": {
+        "nodeId": "ryZde1C5PA",
+        "pinKey": "H13R3IvGB"
+      },
+      "output": {
+        "nodeId": "S1XdlkC5PC",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryOdg1A9vC",
+      "input": {
+        "nodeId": "ryZde1C5PA",
+        "pinKey": "BytC28DfH"
+      },
+      "output": {
+        "nodeId": "BJGdlkC5vR",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "H1DWJ05DA",
+      "input": {
+        "nodeId": "Bk4bJ05DA",
+        "pinKey": "SkWxBA6qDR"
+      },
+      "output": {
+        "nodeId": "ryZde1C5PA",
+        "pinKey": "H1fx68wzB"
+      }
+    },
+    {
+      "id": "SJ_WyA9vA",
+      "input": {
+        "nodeId": "Syeul1A5D0",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "Bk4bJ05DA",
+        "pinKey": "HJxeH0a9D0"
+      }
+    },
+    {
+      "id": "Hkaf1AqvA",
+      "input": {
+        "nodeId": "Bk4bJ05DA",
+        "pinKey": "HyfeSRacwC"
+      },
+      "output": {
+        "nodeId": "BJGdlkC5vR",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "description": "Pulse on toggle on/off.",
+      "id": "Syeul1A5D0",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "ryZde1C5PA",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/core/act"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "True"
+      },
+      "description": "Toggle backlight on (True) and off (False).",
+      "id": "BJGdlkC5vR",
+      "label": "ON",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "True"
+      },
+      "description": "Make the node respond to changes in the input to ON.",
+      "id": "S1XdlkC5PC",
+      "label": "ACT",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "id": "Bk4bJ05DA",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "@/backlight-switch"
+    }
+  ]
+}

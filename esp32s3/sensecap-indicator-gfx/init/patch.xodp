@@ -20,6 +20,9 @@
       "type": "@/input-display"
     },
     {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
       "id": "HkJTvp0IC",
       "label": "INIT",
       "position": {
@@ -28,6 +31,17 @@
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on successful  initialization.",
+      "id": "SJFtza5v0",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
     }
   ]
 }

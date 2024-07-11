@@ -1,0 +1,119 @@
+{
+  "description": "Draw an ellipse.",
+  "nodes": [
+    {
+      "id": "Hkub8p5wR",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Pulse on completion.\n",
+      "id": "Hyx_ZIa5wR",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update.",
+      "id": "rkzuWI6qPA",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "#FFFFFF"
+      },
+      "description": "Color.",
+      "id": "BJm_bUpcv0",
+      "label": "Color",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/color/input-color"
+    },
+    {
+      "description": "X coordinate of the origin.",
+      "id": "r1Vdb8pcDR",
+      "label": "X",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Y coordinate of the origin.",
+      "id": "SySdZI69v0",
+      "label": "Y",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Horizontal radius (pixels).",
+      "id": "HJIubIp5wC",
+      "label": "RX",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Vertical radius (pixels)",
+      "id": "r1v_WUaqw0",
+      "label": "RY",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "True to fill ellipse with colour, False to draw outline only.",
+      "id": "Hkd_W8a5wR",
+      "label": "Fill",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "description": "A SenseCAP Indicator display.",
+      "id": "ryeX8p9PC",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-display"
+    }
+  ]
+}

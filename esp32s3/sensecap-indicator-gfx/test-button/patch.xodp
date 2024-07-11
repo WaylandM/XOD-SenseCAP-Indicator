@@ -1,0 +1,38 @@
+{
+  "links": [
+    {
+      "id": "r1tiJTcP0",
+      "input": {
+        "nodeId": "rkDjya9vA",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SJyd1acD0",
+        "pinKey": "BJ--G1tI-"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "ByNiWkt8Z": "D38"
+      },
+      "id": "SJyd1acD0",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/common-hardware/button"
+    },
+    {
+      "id": "rkDjya9vA",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
+}

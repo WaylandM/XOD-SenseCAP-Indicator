@@ -1,8 +1,10 @@
 #pragma XOD require "https://github.com/WaylandM/Seeed_Arduino_GFX"
 #pragma XOD require "https://github.com/hideakitai/PCA95x5"
+#pragma XOD require "https://github.com/WaylandM/free-fonts"
 
 #include <Arduino_GFX_Library.h>
 #include <PCA95x5.h>
+#include <Free_Fonts.h>
 
 node {
     #define GFX_DEV_DEVICE ESP32_S3_RGB

@@ -15,9 +15,11 @@ node {
             return;
         }
 
-        gfx->fillScreen(RED);
-        pinMode(GFX_BL, OUTPUT);
-        digitalWrite(GFX_BL, HIGH);
+        //gfx->fillScreen(BLACK);
+        //pinMode(GFX_BL, OUTPUT);
+        //digitalWrite(GFX_BL, HIGH);
+
+        emitValue<output_OK>(ctx, 1);
 
     }
 }
