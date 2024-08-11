@@ -1,0 +1,395 @@
+{
+  "comments": [
+    {
+      "content": "# Notes\n\n* To draw a new circle, send a pulse to the UPD pin of the draw-circle node.\n* To blank the screen, send a pulse to the UPD pin of the fill-screen node.\n",
+      "id": "ryAg8LwHLc0",
+      "position": {
+        "units": "slots",
+        "x": 15,
+        "y": 1
+      },
+      "size": {
+        "height": 2,
+        "units": "slots",
+        "width": 7
+      }
+    }
+  ],
+  "description": "Draw a circle and then edit its appearance using the tweak nodes. Run in debugger.",
+  "links": [
+    {
+      "id": "SJMxIUvSLcA",
+      "input": {
+        "nodeId": "SJ6LUPSUcA",
+        "pinKey": "ryv7IRdSP1b"
+      },
+      "output": {
+        "nodeId": "BJv88PSI5C",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
+      "id": "BkZjwH8qC",
+      "input": {
+        "nodeId": "SkudDSUc0",
+        "pinKey": "BJGdlkC5vR"
+      },
+      "output": {
+        "nodeId": "ryo8IwHI9C",
+        "pinKey": "Sk1e_NIVE"
+      }
+    },
+    {
+      "id": "HJVjwrIq0",
+      "input": {
+        "nodeId": "BJmPPBIc0",
+        "pinKey": "SJGqCg0cvA"
+      },
+      "output": {
+        "nodeId": "HydL8PHUqR",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
+      "id": "H18jDH8cA",
+      "input": {
+        "nodeId": "BJmPPBIc0",
+        "pinKey": "S17qCeC5P0"
+      },
+      "output": {
+        "nodeId": "SyK8UDB85C",
+        "pinKey": "SykJ8wjXN"
+      }
+    },
+    {
+      "id": "ryvjPBUcR",
+      "input": {
+        "nodeId": "BJmPPBIc0",
+        "pinKey": "BJiebC9P0"
+      },
+      "output": {
+        "nodeId": "B188UvBLqA",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HytoDBU50",
+      "input": {
+        "nodeId": "HyMYwS890",
+        "pinKey": "Syfp6Zp5vC"
+      },
+      "output": {
+        "nodeId": "SJ6LUPSUcA",
+        "pinKey": "ByHmL0uHPk-"
+      }
+    },
+    {
+      "id": "HJciwrIcA",
+      "input": {
+        "nodeId": "HyMYwS890",
+        "pinKey": "BkDTpZaqwC"
+      },
+      "output": {
+        "nodeId": "SkNILPBI5R",
+        "pinKey": "Sk1e_NIVE"
+      }
+    },
+    {
+      "id": "SyniwrU5C",
+      "input": {
+        "nodeId": "HyMYwS890",
+        "pinKey": "rkXT6bp5vR"
+      },
+      "output": {
+        "nodeId": "BJeI8wrUc0",
+        "pinKey": "SykJ8wjXN"
+      }
+    },
+    {
+      "id": "rk6oPBL5A",
+      "input": {
+        "nodeId": "HyMYwS890",
+        "pinKey": "BkUTpb69v0"
+      },
+      "output": {
+        "nodeId": "H178LPHU5R",
+        "pinKey": "ByfGSDjQE"
+      }
+    },
+    {
+      "id": "rk1hPBI5R",
+      "input": {
+        "nodeId": "HyMYwS890",
+        "pinKey": "BkSaab69DA"
+      },
+      "output": {
+        "nodeId": "ryG8UwSIqA",
+        "pinKey": "ByfGSDjQE"
+      }
+    },
+    {
+      "id": "Skx2wSLq0",
+      "input": {
+        "nodeId": "HyMYwS890",
+        "pinKey": "Hk4TaZTqwA"
+      },
+      "output": {
+        "nodeId": "SJ-ULwS8cR",
+        "pinKey": "ByfGSDjQE"
+      }
+    },
+    {
+      "id": "SyZ2DrIcR",
+      "input": {
+        "nodeId": "HyMYwS890",
+        "pinKey": "Hy6A-a9P0"
+      },
+      "output": {
+        "nodeId": "H1RDvr8cC",
+        "pinKey": "BJ-yPaR8R"
+      }
+    },
+    {
+      "id": "H1Q2DrI9R",
+      "input": {
+        "nodeId": "ryBUIvS85C",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "H1RDvr8cC",
+        "pinKey": "BJ-yPaR8R"
+      }
+    },
+    {
+      "id": "SyBqKHIq0",
+      "input": {
+        "nodeId": "Hkg9KrU90",
+        "pinKey": "SJX2DaCIA"
+      },
+      "output": {
+        "nodeId": "H1RDvr8cC",
+        "pinKey": "BJ-yPaR8R"
+      }
+    },
+    {
+      "id": "HJ6q9BU5A",
+      "input": {
+        "nodeId": "S1t55rL5R",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "Hkg9KrU90",
+        "pinKey": "SJFtza5v0"
+      }
+    },
+    {
+      "id": "BJth5HLq0",
+      "input": {
+        "nodeId": "SJ6LUPSUcA",
+        "pinKey": "ByU7LRuSPkW"
+      },
+      "output": {
+        "nodeId": "HJ3s9HI5R",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "SykJ8wjXN": "#7CC016"
+      },
+      "id": "BJeI8wrUc0",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "xod/debug/tweak-color"
+    },
+    {
+      "boundLiterals": {
+        "ByfGSDjQE": "200"
+      },
+      "id": "SJ-ULwS8cR",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "xod/debug/tweak-number"
+    },
+    {
+      "boundLiterals": {
+        "ByfGSDjQE": "120"
+      },
+      "id": "ryG8UwSIqA",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "xod/debug/tweak-number"
+    },
+    {
+      "boundLiterals": {
+        "ByfGSDjQE": "90"
+      },
+      "id": "H178LPHU5R",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "xod/debug/tweak-number"
+    },
+    {
+      "boundLiterals": {
+        "Sk1e_NIVE": "True"
+      },
+      "id": "SkNILPBI5R",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "type": "xod/debug/tweak-boolean"
+    },
+    {
+      "id": "ryBUIvS85C",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "B188UvBLqA",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "BJv88PSI5C",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "HydL8PHUqR",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "boundLiterals": {
+        "SykJ8wjXN": "#000000"
+      },
+      "id": "SyK8UDB85C",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 1
+      },
+      "type": "xod/debug/tweak-color"
+    },
+    {
+      "boundLiterals": {
+        "Sk1e_NIVE": "True"
+      },
+      "id": "ryo8IwHI9C",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 1
+      },
+      "type": "xod/debug/tweak-boolean"
+    },
+    {
+      "id": "SJ6LUPSUcA",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 1
+      },
+      "type": "xod/core/any"
+    },
+    {
+      "id": "BJmPPBIc0",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 2
+      },
+      "type": "@/fill"
+    },
+    {
+      "id": "H1RDvr8cC",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "@/display"
+    },
+    {
+      "id": "SkudDSUc0",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 2
+      },
+      "type": "@/backlight"
+    },
+    {
+      "id": "HyMYwS890",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "@/draw-circle"
+    },
+    {
+      "id": "Hkg9KrU90",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 1
+      },
+      "type": "@/init"
+    },
+    {
+      "id": "S1t55rL5R",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "HJ3s9HI5R",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    }
+  ]
+}

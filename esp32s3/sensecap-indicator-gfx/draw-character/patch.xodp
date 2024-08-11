@@ -94,20 +94,6 @@
       "type": "xod/color/input-color"
     },
     {
-      "boundLiterals": {
-        "__out__": "01h"
-      },
-      "description": "Size of character.",
-      "id": "SyuGMtacwA",
-      "label": "Size",
-      "position": {
-        "units": "slots",
-        "x": 6,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-byte"
-    },
-    {
       "description": "A SenseCAP Indicator display.",
       "id": "SkkXYp5DC",
       "label": "DEV",
@@ -117,6 +103,20 @@
         "y": 0
       },
       "type": "@/input-display"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "01h"
+      },
+      "description": "Size of character.",
+      "id": "SyCG-_UcR",
+      "label": "Size",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
     }
   ]
 }

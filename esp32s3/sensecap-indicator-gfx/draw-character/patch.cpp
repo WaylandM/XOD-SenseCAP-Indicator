@@ -19,14 +19,15 @@ node {
         XColor bg24 = getValue<input_BG>(ctx);
         uint16_t bg16 = ((bg24.r & 0xF8) << 8) | ((bg24.g & 0xFC) << 3) | (bg24.b >> 3);
 
-        tft -> setFreeFont(nullptr);
+        tft -> setFont(nullptr);
+
+        tft -> setTextSize(getValue<input_Size>(ctx));
 
         tft -> drawChar(getValue<input_X>(ctx),
                         getValue<input_Y>(ctx),
                         *it,
                         color16,
-                        bg16,
-                        getValue<input_Size>(ctx));
+                        bg16);
 
         emitValue<output_Done>(ctx, 1);
     }

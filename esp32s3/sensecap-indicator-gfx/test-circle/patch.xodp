@@ -32,6 +32,17 @@
         "nodeId": "ByJdzT9wR",
         "pinKey": "SJFtza5v0"
       }
+    },
+    {
+      "id": "ryvlASL5A",
+      "input": {
+        "nodeId": "Syc4irIcR",
+        "pinKey": "BJGdlkC5vR"
+      },
+      "output": {
+        "nodeId": "rkVeCH8cC",
+        "pinKey": "Sk1e_NIVE"
+      }
     }
   ],
   "nodes": [
@@ -68,6 +79,27 @@
         "y": 1
       },
       "type": "@/init"
+    },
+    {
+      "id": "Syc4irIcR",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "@/backlight"
+    },
+    {
+      "boundLiterals": {
+        "Sk1e_NIVE": "True"
+      },
+      "id": "rkVeCH8cC",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-boolean"
     }
   ]
 }

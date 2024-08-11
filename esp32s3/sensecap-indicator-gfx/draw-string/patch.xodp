@@ -97,17 +97,6 @@
       "type": "xod/patch-nodes/input-byte"
     },
     {
-      "description": "Font. Choose one of the fonts in wayland/wio-terminal-fonts. If no font is specified the node will default to GLCD.",
-      "id": "r1_M226qw0",
-      "label": "Font",
-      "position": {
-        "units": "slots",
-        "x": 5,
-        "y": 0
-      },
-      "type": "wayland/wio-terminal-fonts/input-font"
-    },
-    {
       "description": "A SenseCAP Indicator display.",
       "id": "SkJph69w0",
       "label": "DEV",
@@ -117,6 +106,17 @@
         "y": 0
       },
       "type": "@/input-display"
+    },
+    {
+      "description": "Font. Choose one of the fonts in wayland/free-fonts. If no font is specified the node will default to GLCD.",
+      "id": "HyLL2v85A",
+      "label": "Font",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "wayland/free-fonts/input-font"
     }
   ]
 }

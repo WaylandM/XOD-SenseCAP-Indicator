@@ -1,4 +1,4 @@
-#pragma XOD require "https://github.com/WaylandM/wio-terminal"
+#pragma XOD require "https://github.com/WaylandM/free-fonts"
 
 #include "Free_Fonts.h"
 
