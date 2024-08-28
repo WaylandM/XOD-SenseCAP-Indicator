@@ -21,11 +21,10 @@ node {
         uint16_t color16 = ((color24.r & 0xF8) << 8) | ((color24.g & 0xFC) << 3) | (color24.b >> 3);
 
         tft -> setTextColor(color16);
-        tft -> setFreeFont(getValue<input_Font>(ctx));
+        tft -> setFont(getValue<input_Font>(ctx));
         tft -> setTextSize(getValue<input_Size>(ctx));
-        tft -> drawString(cString,
-                        getValue<input_X>(ctx),
-                        getValue<input_Y>(ctx));
+        tft -> setCursor(getValue<input_X>(ctx), getValue<input_Y>(ctx));
+        tft -> println(cString);
 
         emitValue<output_Done>(ctx, 1);
     }

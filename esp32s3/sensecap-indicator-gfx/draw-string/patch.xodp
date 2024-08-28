@@ -108,15 +108,14 @@
       "type": "@/input-display"
     },
     {
-      "description": "Font. Choose one of the fonts in wayland/free-fonts. If no font is specified the node will default to GLCD.",
-      "id": "HyLL2v85A",
+      "id": "S1tPpbTiA",
       "label": "Font",
       "position": {
         "units": "slots",
         "x": 5,
         "y": 0
       },
-      "type": "wayland/free-fonts/input-font"
+      "type": "@/input-font"
     }
   ]
 }
