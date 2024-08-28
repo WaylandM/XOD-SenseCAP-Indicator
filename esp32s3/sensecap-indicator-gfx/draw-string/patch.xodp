@@ -108,14 +108,15 @@
       "type": "@/input-display"
     },
     {
-      "id": "S1tPpbTiA",
+      "description": "Font. Choose one of the fonts in wayland/sensecap-indicator-gfx-fonts. If no font is specified the node will default to GLCD.",
+      "id": "SJ-esm6sA",
       "label": "Font",
       "position": {
         "units": "slots",
         "x": 5,
         "y": 0
       },
-      "type": "@/input-font"
+      "type": "wayland/sensecap-indicator-gfx-fonts/input-font"
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "description": "Load \"Mono Oblique 36 point\" font.",
+  "nodes": [
+    {
+      "id": "B1TWYGTjR",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "\"Mono Oblique 36 point\" font.",
+      "id": "Bk4zKzasA",
+      "label": "Font",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "@/output-font"
+    }
+  ]
+}

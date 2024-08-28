@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "BJxUOGpi0",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "id": "BJS8OfpiA",
+      "label": "Font",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-self"
+    },
+    {
+      "id": "SkMDuG6jR",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/utility"
+    }
+  ]
+}

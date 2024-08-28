@@ -1,7 +1,8 @@
 {
+  "description": "Load \"Mono Bold Oblique 30 point\" font.",
   "nodes": [
     {
-      "id": "HkuP2-6s0",
+      "id": "B1TWYGTjR",
       "position": {
         "units": "slots",
         "x": 0,
@@ -10,7 +11,8 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "id": "rkTPnZ6sA",
+      "description": "\"Mono Bold Oblique 30 point\" font.",
+      "id": "Bk4zKzasA",
       "label": "Font",
       "position": {
         "units": "slots",

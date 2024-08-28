@@ -1,0 +1,6 @@
+{
+  "description": "GFX fonts for the SenseCAP Indicator display. To be used with the draw-string node of the sensecap-indicator-gfx library. Wraps https://github.com/WaylandM/XOD_ArduinoFreeFontFile.",
+  "license": "BSD",
+  "name": "sensecap-indicator-gfx-fonts",
+  "version": "0.0.2"
+}
